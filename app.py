@@ -440,6 +440,10 @@ def health_check():
         'timestamp': datetime.now().isoformat()
     })
 
+@app.route('/')
+def home():
+    return jsonify({'status': 'AI Business Solution Backend is running'})
+
 # ================================================================
 # RUN THE APP
 # ================================================================
